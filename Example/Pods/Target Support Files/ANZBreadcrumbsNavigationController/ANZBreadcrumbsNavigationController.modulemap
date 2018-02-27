@@ -1,0 +1,6 @@
+framework module ANZBreadcrumbsNavigationController {
+  umbrella header "ANZBreadcrumbsNavigationController-umbrella.h"
+
+  export *
+  module * { export * }
+}

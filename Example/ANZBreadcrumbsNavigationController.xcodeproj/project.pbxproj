@@ -41,12 +41,12 @@
 		607FACE51AFB9204008FA782 /* ANZBreadcrumbsNavigationController_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ANZBreadcrumbsNavigationController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		767AEA6C7BCC82E526D01762 /* ANZBreadcrumbsNavigationController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ANZBreadcrumbsNavigationController.podspec; path = ../ANZBreadcrumbsNavigationController.podspec; sourceTree = "<group>"; };
+		767AEA6C7BCC82E526D01762 /* ANZBreadcrumbsNavigationController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ANZBreadcrumbsNavigationController.podspec; path = ../ANZBreadcrumbsNavigationController.podspec; sourceTree = "<group>"; };
 		867F5A6184A75AB120FC4FDC /* Pods-ANZBreadcrumbsNavigationController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANZBreadcrumbsNavigationController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ANZBreadcrumbsNavigationController_Tests/Pods-ANZBreadcrumbsNavigationController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A585B4F057FA3645C4512E47 /* Pods-ANZBreadcrumbsNavigationController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANZBreadcrumbsNavigationController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ANZBreadcrumbsNavigationController_Example/Pods-ANZBreadcrumbsNavigationController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CC7D2E2B3C2B5980A7879315 /* Pods_ANZBreadcrumbsNavigationController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANZBreadcrumbsNavigationController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC2409D48C71BF0B0D2CB6F8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		F8E8DE401E69615ACC190F62 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		EC2409D48C71BF0B0D2CB6F8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F8E8DE401E69615ACC190F62 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for ANZBreadcrumbsNavigationController */,
+				607FACD21AFB9204008FA782 /* Example */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				893DEEC99449D6424215BEBA /* Pods */,
@@ -90,7 +90,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for ANZBreadcrumbsNavigationController */ = {
+		607FACD21AFB9204008FA782 /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -100,7 +100,7 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for ANZBreadcrumbsNavigationController";
+			name = Example;
 			path = ANZBreadcrumbsNavigationController;
 			sourceTree = "<group>";
 		};
