@@ -33,14 +33,6 @@ class ANZBreadcrumbsListItemView: UICollectionViewCell {
         self.titleLabel.frame = CGRect(origin: .zero, size: self.contentView.bounds.size)
     }
     
-    override func sizeThatFits(_ size: CGSize) -> CGSize {
-        guard let text = self.titleLabel.text else {
-            return super.sizeThatFits(size)
-        }
-        let fitSize = NSString(string: text).boundingRect(with: CGSize(width: 320.0, height: 32.0), options: [.usesLineFragmentOrigin], attributes: [.font: self.titleLabel.font], context: nil)
-        return CGSize(width: fitSize.width, height: 32)
-    }
-    
     func configure(title: String, font: UIFont, color: UIColor) {
         self.titleLabel.font = font
         self.titleLabel.textColor = color
