@@ -1,6 +1,5 @@
 # ANZBreadcrumbsNavigationController
 
-[![CI Status](http://img.shields.io/travis/anzfactory/ANZBreadcrumbsNavigationController.svg?style=flat)](https://travis-ci.org/anzfactory/ANZBreadcrumbsNavigationController)
 [![Version](https://img.shields.io/cocoapods/v/ANZBreadcrumbsNavigationController.svg?style=flat)](http://cocoapods.org/pods/ANZBreadcrumbsNavigationController)
 [![License](https://img.shields.io/cocoapods/l/ANZBreadcrumbsNavigationController.svg?style=flat)](http://cocoapods.org/pods/ANZBreadcrumbsNavigationController)
 [![Platform](https://img.shields.io/cocoapods/p/ANZBreadcrumbsNavigationController.svg?style=flat)](http://cocoapods.org/pods/ANZBreadcrumbsNavigationController)
