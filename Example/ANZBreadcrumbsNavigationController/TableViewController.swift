@@ -13,6 +13,17 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Table \(self.navigationController?.viewControllers.count ?? 0)"
+        
+        if let navicationController = self.navigationController, let root = navicationController.viewControllers.first {
+            if root == self {
+                let barButton = UIBarButtonItem(title: "Close", style: .plain, target: self, action: #selector(type(of: self).back))
+                navigationItem.leftBarButtonItems = [barButton]
+            }
+        }
+    }
+    
+    @objc func back() {
+        self.dismiss(animated: true, completion: nil)
     }
 
     // MARK: - Table view data source

@@ -11,10 +11,19 @@ import UIKit
 import ANZBreadcrumbsNavigationController
 
 class ViewController: UIViewController {
+    
+    var needBackButton: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "ViewController \(self.navigationController?.viewControllers.count ?? 0)"
+        
+        if self.needBackButton, let navicationController = self.navigationController, let root = navicationController.viewControllers.first {
+            if root == self {
+                let barButton = UIBarButtonItem(title: "Close", style: .plain, target: self, action: #selector(type(of: self).back))
+                navigationItem.leftBarButtonItems = [barButton]
+            }
+        }
     }
 
     @IBAction func tapPushMe(_ sender: UIButton) {
@@ -23,7 +32,7 @@ class ViewController: UIViewController {
     
     @IBAction func tapManual(_ sender: Any) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController")
-        
+        (vc as? ViewController)?.needBackButton = true
         let nav = ANZBreadcrumbsNavigationController(rootViewController: vc)
         let config = ANZBreadcrumbsNavigationConfig()
         config.height = 44.0
@@ -39,6 +48,10 @@ class ViewController: UIViewController {
     
     @IBAction func tapRntime(_ sender: Any) {
         self.present(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "NavigationViewController"), animated: true, completion: nil)
+    }
+    
+    @objc func back() {
+        self.dismiss(animated: true, completion: nil)
     }
 }
 
