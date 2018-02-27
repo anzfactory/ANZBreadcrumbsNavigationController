@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ANZBreadcrumbsNavigationController_Example' do
+  pod 'ANZBreadcrumbsNavigationController', :path => '../'
+
+  target 'ANZBreadcrumbsNavigationController_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
