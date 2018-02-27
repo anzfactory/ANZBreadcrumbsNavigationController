@@ -31,12 +31,13 @@ ANZBreadcrumbsNavigationController is breadcrums navigation
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'ANZBreadcrumbsNavigationController/Classes/**/*'
-  
+  s.frameworks = 'UIKit'
+
   # s.resource_bundles = {
   #   'ANZBreadcrumbsNavigationController' => ['ANZBreadcrumbsNavigationController/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+
   # s.dependency 'AFNetworking', '~> 2.3'
 end

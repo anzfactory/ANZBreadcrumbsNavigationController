@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ANZBreadcrumbsNavigationController: 11dd54c3530f0a4f0afa38bd0275cafbc7519675
+  ANZBreadcrumbsNavigationController: 6c0161b654fc588b45ceec3c1ecc1f047395f2c8
 
 PODFILE CHECKSUM: fa3c8038e523ae6381491c91c15d2ae0c410926d
 

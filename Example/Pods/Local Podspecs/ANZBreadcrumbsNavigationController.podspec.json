@@ -1,8 +1,8 @@
 {
   "name": "ANZBreadcrumbsNavigationController",
   "version": "0.1.0",
-  "summary": "A short description of ANZBreadcrumbsNavigationController.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "Breadcrumbs navigation controller.",
+  "description": "ANZBreadcrumbsNavigationController is breadcrums navigation",
   "homepage": "https://github.com/anzfactory/ANZBreadcrumbsNavigationController",
   "license": {
     "type": "MIT",
@@ -15,8 +15,10 @@
     "git": "https://github.com/anzfactory/ANZBreadcrumbsNavigationController.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/AnzNetJp",
   "platforms": {
-    "ios": "8.0"
+    "ios": "11.0"
   },
-  "source_files": "ANZBreadcrumbsNavigationController/Classes/**/*"
+  "source_files": "ANZBreadcrumbsNavigationController/Classes/**/*",
+  "frameworks": "UIKit"
 }
