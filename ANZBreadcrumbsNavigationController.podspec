@@ -8,15 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ANZBreadcrumbsNavigationController'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'Breadcrumbs navigation controller.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
 ANZBreadcrumbsNavigationController is breadcrums navigation
                        DESC
@@ -28,16 +21,11 @@ ANZBreadcrumbsNavigationController is breadcrums navigation
   s.source           = { :git => 'https://github.com/anzfactory/ANZBreadcrumbsNavigationController.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/AnzNetJp'
 
+  s.platform     = :ios, "11.0"
   s.ios.deployment_target = '11.0'
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 
   s.source_files = 'ANZBreadcrumbsNavigationController/Classes/**/*'
   s.frameworks = 'UIKit'
 
-  # s.resource_bundles = {
-  #   'ANZBreadcrumbsNavigationController' => ['ANZBreadcrumbsNavigationController/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
