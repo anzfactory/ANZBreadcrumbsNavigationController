@@ -1,13 +1,13 @@
 //
-//  ANZBreadcrumbsListItemView.swift
+//  ANZBreadcrumbsListSeparatorView.swift
 //  ANZBreadcrumbsNavigationController
 //
-//  Created by anzfactory on 2018/02/27.
+//  Created by sasato on 2018/07/18.
 //
 
-import Foundation
+import UIKit
 
-class ANZBreadcrumbsListItemView: UICollectionViewCell {
+class ANZBreadcrumbsListSeparatorView: UICollectionReusableView {
     
     private let titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
@@ -19,8 +19,8 @@ class ANZBreadcrumbsListItemView: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.contentView.backgroundColor = .clear
-        self.contentView.addSubview(self.titleLabel)
+        self.backgroundColor = .clear
+        self.addSubview(self.titleLabel)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -30,11 +30,11 @@ class ANZBreadcrumbsListItemView: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        self.titleLabel.frame = CGRect(origin: .zero, size: self.contentView.bounds.size)
+        self.titleLabel.frame = CGRect(origin: .zero, size: self.bounds.size)
     }
 }
 
-extension ANZBreadcrumbsListItemView {
+extension ANZBreadcrumbsListSeparatorView {
     
     func configure(title: String, font: UIFont, color: UIColor) {
         self.titleLabel.font = font
