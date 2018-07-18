@@ -41,6 +41,7 @@ class ViewController: UIViewController {
         config.spacing = 8.0
         config.itemStyle.fontSize = 18
         config.itemStyle.textColor = .black
+        config.isRootDisplayed = true
         nav.config = config
         
         self.present(nav, animated: true, completion: nil)
@@ -48,6 +49,23 @@ class ViewController: UIViewController {
     
     @IBAction func tapRntime(_ sender: Any) {
         self.present(UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "NavigationViewController"), animated: true, completion: nil)
+    }
+    
+    @IBAction func tapSwitchConfig(_ sender: Any) {
+        
+        let config = ANZBreadcrumbsNavigationConfig()
+        config.height = 52.0
+        config.backgroundColor = .blue
+        config.separator = "->"
+        config.padding = 16.0
+        config.itemStyle.fontSize = 18
+        config.itemStyle.textColor = .white
+        config.showsHorizontalScrollIndicator = true
+        config.isRootDisplayed = true
+        
+        if let breadcrumbsNav = self.navigationController as? ANZBreadcrumbsNavigationController {
+            breadcrumbsNav.config = config
+        }
     }
     
     @objc func back() {
