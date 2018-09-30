@@ -66,8 +66,7 @@ public class ANZBreadcrumbsNavigationController: UINavigationController {
     }
     
     public override func popViewController(animated: Bool) -> UIViewController? {
-        
-        guard self.viewControllers.count > 1 else {
+                guard self.viewControllers.count > 1 else {
             return nil
         }
         
@@ -148,7 +147,7 @@ extension ANZBreadcrumbsNavigationController {
         listView.dataSource = self
         listView.delegate = self
         listView.register(ANZBreadcrumbsListItemView.self, forCellWithReuseIdentifier: type(of: self).CELL_ID)
-        listView.register(ANZBreadcrumbsListSeparatorView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: type(of: self).HEADER_ID)
+        listView.register(ANZBreadcrumbsListSeparatorView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: type(of: self).HEADER_ID)
         container.addSubview(listView)
         NSLayoutConstraint.activate([
             listView.topAnchor.constraint(equalTo: container.topAnchor),
@@ -217,7 +216,7 @@ extension ANZBreadcrumbsNavigationController: UICollectionViewDataSource {
     
     public func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
-        if kind == UICollectionElementKindSectionHeader, let separatorView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: type(of: self).HEADER_ID, for: indexPath) as? ANZBreadcrumbsListSeparatorView {
+        if kind == UICollectionView.elementKindSectionHeader, let separatorView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: type(of: self).HEADER_ID, for: indexPath) as? ANZBreadcrumbsListSeparatorView {
             
             separatorView.configure(
                 title: self.config.separator,
@@ -321,7 +320,7 @@ extension ANZBreadcrumbsNavigationController: UINavigationControllerDelegate {
     
     public func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
         
-        viewController.transitionCoordinator?.notifyWhenInteractionChanges({ [weak self] (context) in
+        viewController.transitionCoordinator?.notifyWhenInteractionChanges { [weak self] (context) in
             
             guard let this = self else {
                 return
@@ -331,6 +330,6 @@ extension ANZBreadcrumbsNavigationController: UINavigationControllerDelegate {
                 context.viewController(forKey: UITransitionContextViewControllerKey.from)?.removeObserver(this, forKeyPath: #keyPath(UIViewController.title))
                 this.update(event: .delete)
             }
-        })
+        }
     }
 }

@@ -1,6 +1,6 @@
 {
   "name": "ANZBreadcrumbsNavigationController",
-  "version": "0.1.0",
+  "version": "0.4.0",
   "summary": "Breadcrumbs navigation controller.",
   "description": "ANZBreadcrumbsNavigationController is breadcrums navigation",
   "homepage": "https://github.com/anzfactory/ANZBreadcrumbsNavigationController",
@@ -13,11 +13,14 @@
   },
   "source": {
     "git": "https://github.com/anzfactory/ANZBreadcrumbsNavigationController.git",
-    "tag": "0.1.0"
+    "tag": "0.4.0"
   },
   "social_media_url": "https://twitter.com/AnzNetJp",
   "platforms": {
     "ios": "11.0"
+  },
+  "pod_target_xcconfig": {
+    "SWIFT_VERSION": "4.2"
   },
   "source_files": "ANZBreadcrumbsNavigationController/Classes/**/*",
   "frameworks": "UIKit"

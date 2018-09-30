@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ANZBreadcrumbsNavigationController'
-  s.version          = '0.3.0'
+  s.version          = '0.4.0'
   s.summary          = 'Breadcrumbs navigation controller.'
   s.description      = <<-DESC
 ANZBreadcrumbsNavigationController is breadcrums navigation
@@ -23,7 +23,7 @@ ANZBreadcrumbsNavigationController is breadcrums navigation
 
   s.platform     = :ios, "11.0"
   s.ios.deployment_target = '11.0'
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.1' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
 
   s.source_files = 'ANZBreadcrumbsNavigationController/Classes/**/*'
   s.frameworks = 'UIKit'
