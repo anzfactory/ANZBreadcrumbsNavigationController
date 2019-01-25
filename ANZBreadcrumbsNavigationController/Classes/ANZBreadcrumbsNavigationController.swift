@@ -22,6 +22,10 @@ public class ANZBreadcrumbsNavigationController: UINavigationController {
         }
     }
     
+    public var listViewHeight: CGFloat {
+        return config.height
+    }
+    
     @objc public dynamic var config: ANZBreadcrumbsNavigationConfig = ANZBreadcrumbsNavigationConfig() {
         didSet {
             self.updateUI(config: self.config)
@@ -44,7 +48,9 @@ public class ANZBreadcrumbsNavigationController: UINavigationController {
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.additionalSafeAreaInsets = UIEdgeInsets(top: self.config.height, left: 0, bottom: 0, right: 0)
+        if #available(iOS 11.0, *) {
+            self.additionalSafeAreaInsets = UIEdgeInsets(top: self.config.height, left: 0, bottom: 0, right: 0)
+        }
     }
     
     public override func viewDidAppear(_ animated: Bool) {
@@ -123,19 +129,30 @@ extension ANZBreadcrumbsNavigationController {
     
     private func setupUI() {
         
-        self.additionalSafeAreaInsets = UIEdgeInsets(top: self.config.height, left: 0, bottom: 0, right: 0)
+        if #available(iOS 11.0, *) {
+            self.additionalSafeAreaInsets = UIEdgeInsets(top: self.config.height, left: 0, bottom: 0, right: 0)
+        }
         
         let container = UIView(frame: CGRect(x: 0, y: UIApplication.shared.statusBarFrame.height + self.navigationBar.frame.height, width: self.view.bounds.width, height: self.config.height))
         container.backgroundColor = self.config.backgroundColor
         container.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(container)
         let heightConstraint = container.heightAnchor.constraint(equalToConstant: self.config.height)
-        NSLayoutConstraint.activate([
-            self.view.safeAreaLayoutGuide.leadingAnchor.constraint(equalTo: container.leadingAnchor),
-            self.view.safeAreaLayoutGuide.trailingAnchor.constraint(equalTo: container.trailingAnchor),
-            container.topAnchor.constraint(equalTo: self.view.topAnchor, constant: container.frame.origin.y),
-            heightConstraint
-        ])
+        if #available(iOS 11.0, *) {
+            NSLayoutConstraint.activate([
+                self.view.safeAreaLayoutGuide.leadingAnchor.constraint(equalTo: container.leadingAnchor),
+                self.view.safeAreaLayoutGuide.trailingAnchor.constraint(equalTo: container.trailingAnchor),
+                container.topAnchor.constraint(equalTo: self.view.topAnchor, constant: container.frame.origin.y),
+                heightConstraint
+            ])
+        } else {
+            NSLayoutConstraint.activate([
+                self.view.leadingAnchor.constraint(equalTo: container.leadingAnchor),
+                self.view.trailingAnchor.constraint(equalTo: container.trailingAnchor),
+                container.topAnchor.constraint(equalTo: self.view.topAnchor, constant: container.frame.origin.y),
+                heightConstraint
+            ])
+        }
         self.containerView = container
         self.containerViewHeightConstraint = heightConstraint
         
@@ -160,7 +177,9 @@ extension ANZBreadcrumbsNavigationController {
     
     private func updateUI(config: ANZBreadcrumbsNavigationConfig) {
         
-        self.additionalSafeAreaInsets = UIEdgeInsets(top: config.height, left: 0, bottom: 0, right: 0)
+        if #available(iOS 11.0, *) {
+            self.additionalSafeAreaInsets = UIEdgeInsets(top: config.height, left: 0, bottom: 0, right: 0)
+        }
         
         self.containerView?.backgroundColor = config.backgroundColor
         self.containerViewHeightConstraint?.constant = config.height
@@ -320,16 +339,31 @@ extension ANZBreadcrumbsNavigationController: UINavigationControllerDelegate {
     
     public func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
         
-        viewController.transitionCoordinator?.notifyWhenInteractionChanges { [weak self] (context) in
+        func finTransition(context: UIViewControllerTransitionCoordinatorContext) {
             
-            guard let this = self else {
-                return
+            context.viewController(forKey: UITransitionContextViewControllerKey.from)?.removeObserver(self, forKeyPath: #keyPath(UIViewController.title))
+            self.update(event: .delete)
+        }
+        
+        if #available(iOS 10.0, *) {
+            viewController.transitionCoordinator?.notifyWhenInteractionChanges { context in
+                
+                guard !context.isCancelled else {
+                    return
+                }
+                
+                finTransition(context: context)
             }
-            
-            if !context.isCancelled {
-                context.viewController(forKey: UITransitionContextViewControllerKey.from)?.removeObserver(this, forKeyPath: #keyPath(UIViewController.title))
-                this.update(event: .delete)
+        } else {
+            viewController.transitionCoordinator?.notifyWhenInteractionEnds { context in
+                
+                guard !context.isCancelled else {
+                    return
+                }
+                
+                finTransition(context: context)
             }
         }
+        
     }
 }

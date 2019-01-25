@@ -43,7 +43,7 @@
 		607FACE51AFB9204008FA782 /* ANZBreadcrumbsNavigationController_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ANZBreadcrumbsNavigationController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		767AEA6C7BCC82E526D01762 /* ANZBreadcrumbsNavigationController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ANZBreadcrumbsNavigationController.podspec; path = ../ANZBreadcrumbsNavigationController.podspec; sourceTree = "<group>"; };
+		767AEA6C7BCC82E526D01762 /* ANZBreadcrumbsNavigationController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ANZBreadcrumbsNavigationController.podspec; path = ../ANZBreadcrumbsNavigationController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		867F5A6184A75AB120FC4FDC /* Pods-ANZBreadcrumbsNavigationController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANZBreadcrumbsNavigationController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ANZBreadcrumbsNavigationController_Tests/Pods-ANZBreadcrumbsNavigationController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A585B4F057FA3645C4512E47 /* Pods-ANZBreadcrumbsNavigationController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANZBreadcrumbsNavigationController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ANZBreadcrumbsNavigationController_Example/Pods-ANZBreadcrumbsNavigationController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CC7D2E2B3C2B5980A7879315 /* Pods_ANZBreadcrumbsNavigationController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANZBreadcrumbsNavigationController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -474,6 +474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ANZBreadcrumbsNavigationController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -489,6 +490,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ANZBreadcrumbsNavigationController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

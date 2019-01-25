@@ -12,16 +12,24 @@ import ANZBreadcrumbsNavigationController
 
 class ViewController: UIViewController {
     
+    @IBOutlet private var stackViewTopConstraint: NSLayoutConstraint!
+    
     var needBackButton: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "ViewController \(self.navigationController?.viewControllers.count ?? 0)"
         
-        if self.needBackButton, let navicationController = self.navigationController, let root = navicationController.viewControllers.first {
-            if root == self {
-                let barButton = UIBarButtonItem(title: "Close", style: .plain, target: self, action: #selector(type(of: self).back))
-                navigationItem.leftBarButtonItems = [barButton]
+        if let navicationController = self.navigationController as? ANZBreadcrumbsNavigationController {
+            if self.needBackButton, let root = navicationController.viewControllers.first {
+                if root == self {
+                    let barButton = UIBarButtonItem(title: "Close", style: .plain, target: self, action: #selector(type(of: self).back))
+                    navigationItem.leftBarButtonItems = [barButton]
+                }
+            }
+            
+            if #available(iOS 11.0, *) { } else {
+                stackViewTopConstraint.constant = navicationController.listViewHeight
             }
         }
     }
