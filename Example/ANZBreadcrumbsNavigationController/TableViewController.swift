@@ -8,16 +8,24 @@
 
 import UIKit
 
+import ANZBreadcrumbsNavigationController
+
 class TableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Table \(self.navigationController?.viewControllers.count ?? 0)"
         
-        if let navicationController = self.navigationController, let root = navicationController.viewControllers.first {
+        if let navicationController = self.navigationController as? ANZBreadcrumbsNavigationController, let root = navicationController.viewControllers.first {
             if root == self {
                 let barButton = UIBarButtonItem(title: "Close", style: .plain, target: self, action: #selector(type(of: self).back))
                 navigationItem.leftBarButtonItems = [barButton]
+            }
+            
+            if #available(iOS 11.0, *) { } else {
+                var inset = self.tableView.contentInset
+                inset.top += navicationController.listViewHeight
+                self.tableView.contentInset = inset
             }
         }
     }
