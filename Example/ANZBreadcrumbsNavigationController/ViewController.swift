@@ -18,6 +18,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.title = "ViewController \(self.navigationController?.viewControllers.count ?? 0)"
         
         if let navicationController = self.navigationController as? ANZBreadcrumbsNavigationController {
@@ -26,10 +27,6 @@ class ViewController: UIViewController {
                     let barButton = UIBarButtonItem(title: "Close", style: .plain, target: self, action: #selector(type(of: self).back))
                     navigationItem.leftBarButtonItems = [barButton]
                 }
-            }
-            
-            if #available(iOS 11.0, *) { } else {
-                stackViewTopConstraint.constant = navicationController.listViewHeight
             }
         }
     }

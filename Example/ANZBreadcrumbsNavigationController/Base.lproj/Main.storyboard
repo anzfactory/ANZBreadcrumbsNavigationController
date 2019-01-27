@@ -99,6 +99,7 @@
                         <userDefinedRuntimeAttribute type="color" keyPath="config.itemStyle.textColor">
                             <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="config.isAutoHidden" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="VFc-rK-gPj" kind="relationship" relationship="rootViewController" id="GZG-iz-MTb"/>
@@ -145,6 +146,9 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="config.isAutoHidden" value="NO"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Z6b-KN-aSa"/>
                     </connections>

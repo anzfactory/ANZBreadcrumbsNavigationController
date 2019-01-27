@@ -38,19 +38,17 @@ public class ANZBreadcrumbsNavigationController: UINavigationController {
     private var containerViewHeightConstraint: NSLayoutConstraint?
     
     private var inTransition: Bool = false
+    private var inAnimation: Bool = false
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupUI()
         self.delegate = self
+        
+        self.setupUI()
     }
     
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        if #available(iOS 11.0, *) {
-            self.additionalSafeAreaInsets = UIEdgeInsets(top: self.config.height, left: 0, bottom: 0, right: 0)
-        }
     }
     
     public override func viewDidAppear(_ animated: Bool) {
@@ -129,13 +127,10 @@ extension ANZBreadcrumbsNavigationController {
     
     private func setupUI() {
         
-        if #available(iOS 11.0, *) {
-            self.additionalSafeAreaInsets = UIEdgeInsets(top: self.config.height, left: 0, bottom: 0, right: 0)
-        }
-        
         let container = UIView(frame: CGRect(x: 0, y: UIApplication.shared.statusBarFrame.height + self.navigationBar.frame.height, width: self.view.bounds.width, height: self.config.height))
         container.backgroundColor = self.config.backgroundColor
         container.translatesAutoresizingMaskIntoConstraints = false
+        container.isHidden = self.config.isAutoHidden
         self.view.addSubview(container)
         let heightConstraint = container.heightAnchor.constraint(equalToConstant: self.config.height)
         if #available(iOS 11.0, *) {
@@ -177,10 +172,6 @@ extension ANZBreadcrumbsNavigationController {
     
     private func updateUI(config: ANZBreadcrumbsNavigationConfig) {
         
-        if #available(iOS 11.0, *) {
-            self.additionalSafeAreaInsets = UIEdgeInsets(top: config.height, left: 0, bottom: 0, right: 0)
-        }
-        
         self.containerView?.backgroundColor = config.backgroundColor
         self.containerViewHeightConstraint?.constant = config.height
         self.containerViewHeightConstraint?.isActive = true
@@ -188,6 +179,62 @@ extension ANZBreadcrumbsNavigationController {
         self.listView?.showsHorizontalScrollIndicator = self.config.showsHorizontalScrollIndicator
         
         self.view.setNeedsLayout()
+    }
+    
+    private func showBreadcrumbsIfNeeded() {
+        
+        self.notifyDidShowBreadcrumbs()
+        
+        guard !self.inAnimation, let containerView = self.containerView, containerView.isHidden else {
+            return
+        }
+        self.inAnimation = true
+        
+        UIView.animate(withDuration: 0.3, animations: {
+            containerView.alpha = 1.0
+        }) { _ in
+            self.inAnimation = false
+            containerView.isHidden = false
+        }
+    }
+    
+    private func hideBreadcrumbsIfNeeded() {
+        
+        self.notifyDidHideBreadcrumbs()
+        
+        guard !self.inAnimation, let containerView = self.containerView, !containerView.isHidden else {
+            return
+        }
+        self.inAnimation = true
+        
+        UIView.animate(withDuration: 0.3, animations: {
+            containerView.alpha = 0.0
+        }) { _ in
+            self.inAnimation = false
+            containerView.isHidden = true
+        }
+    }
+}
+
+// MARK: - Notification
+extension ANZBreadcrumbsNavigationController {
+    
+    private func notifyDidShowBreadcrumbs() {
+        
+        if #available(iOS 11.0, *), self.additionalSafeAreaInsets.top != self.config.height {
+            self.additionalSafeAreaInsets = UIEdgeInsets(top: self.config.height, left: 0, bottom: 0, right: 0)
+        }
+        
+        NotificationCenter.default.post(name: .ANZBreadcrumbsDidShowBreadcrumbsView, object: self.config)
+    }
+    
+    private func notifyDidHideBreadcrumbs() {
+        
+        if #available(iOS 11.0, *), self.additionalSafeAreaInsets.top != 0 {
+            self.additionalSafeAreaInsets = .zero
+        }
+        
+        NotificationCenter.default.post(name: .ANZBreadcrumbsDidHideBreadcrumbsView, object: self.config)
     }
 }
 
@@ -221,8 +268,17 @@ extension ANZBreadcrumbsNavigationController: UICollectionViewDataSource {
     
     public func numberOfSections(in collectionView: UICollectionView) -> Int {
         
-        if !self.config.isRootDisplayed && self.viewControllers.count == 1 {
-            return 0
+        if 1 >= self.viewControllers.count {
+            
+            if self.config.isAutoHidden {
+                self.hideBreadcrumbsIfNeeded()
+            }
+            
+            if !self.config.isRootDisplayed {
+                return 0
+            }
+        } else if self.config.isAutoHidden {
+            self.showBreadcrumbsIfNeeded()
         }
         
         return self.viewControllers.count
