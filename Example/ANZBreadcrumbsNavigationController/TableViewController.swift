@@ -11,9 +11,10 @@ import UIKit
 import ANZBreadcrumbsNavigationController
 
 class TableViewController: UITableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.title = "Table \(self.navigationController?.viewControllers.count ?? 0)"
         
         if let navicationController = self.navigationController as? ANZBreadcrumbsNavigationController, let root = navicationController.viewControllers.first {
@@ -21,13 +22,21 @@ class TableViewController: UITableViewController {
                 let barButton = UIBarButtonItem(title: "Close", style: .plain, target: self, action: #selector(type(of: self).back))
                 navigationItem.leftBarButtonItems = [barButton]
             }
-            
-            if #available(iOS 11.0, *) { } else {
-                var inset = self.tableView.contentInset
-                inset.top += navicationController.listViewHeight
-                self.tableView.contentInset = inset
-            }
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(type(of: self).didShowBreadcrumbsViewNotified(_:)), name: .ANZBreadcrumbsDidShowBreadcrumbsView, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(type(of: self).didHideBreadcrumbsViewNotified(_:)), name: .ANZBreadcrumbsDidHideBreadcrumbsView, object: nil)
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        NotificationCenter.default.removeObserver(self)
     }
     
     @objc func back() {
@@ -56,4 +65,39 @@ class TableViewController: UITableViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
 
+}
+
+// MARK: - Notification
+@objc extension TableViewController {
+    
+    private func didShowBreadcrumbsViewNotified(_ notification: Notification) {
+        
+        guard let config = notification.object as? ANZBreadcrumbsNavigationConfig else {
+            return
+        }
+        
+        if #available(iOS 11.0, *) { } else {
+            var inset = self.tableView.contentInset
+            var top = UIApplication.shared.statusBarFrame.height + config.height
+            if let navigationBar = self.navigationController?.navigationBar {
+                top += navigationBar.frame.height
+            }
+            inset.top = top
+            self.tableView.contentInset = inset
+        }
+    }
+    
+    private func didHideBreadcrumbsViewNotified(_ notification: Notification) {
+        
+        if #available(iOS 11.0, *) { } else {
+            var inset = self.tableView.contentInset
+            var top = UIApplication.shared.statusBarFrame.height
+            if let navigationBar = self.navigationController?.navigationBar {
+                top += navigationBar.frame.height
+            }
+            inset.top = top
+            self.tableView.contentInset = inset
+        }
+    }
+    
 }

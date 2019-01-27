@@ -8,19 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		100C43E10E5F7D2F00A3EA066F4ED0D8 /* Pods-ANZBreadcrumbsNavigationController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D02D2FBE46D24CBB31F2E28AC64E1D3E /* Pods-ANZBreadcrumbsNavigationController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1EF27DB806A7FDB1100FDA2F96916453 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		26D3B977036D91953492987742E45DB7 /* ANZBreadcrumbsNavigationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78B8CB26A2F36CD93250AAF75C7FCED /* ANZBreadcrumbsNavigationConfig.swift */; };
-		2A91F6552D713C3D72F54B3851B197CA /* ANZBreadcrumbsNavigationController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8425D45D5182634170A35CE03279E1EB /* ANZBreadcrumbsNavigationController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FD4C80DA436C8300E25690E9258488D /* ANZBreadcrumbsListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44E3BE2CE577C3FFB79EE96A2A3A2E3 /* ANZBreadcrumbsListItemView.swift */; };
-		5DEA59AB7C98137E7E24C02D798D5EC6 /* ANZBreadcrumbsNavigationController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F3B079329BF579C9CF0D0DDC6EA0C0 /* ANZBreadcrumbsNavigationController-dummy.m */; };
+		28AAA09850E2C62AB333F33988F720B5 /* ANZBreadcrumbsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BF1FDFF1107E7252A0D320F93F5F30 /* ANZBreadcrumbsNavigationController.swift */; };
+		2EE575443B25A1524B5FD864BB74EF7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		3333CCFF09A6C46EE8E3AA3BD1E09A47 /* ANZBreadcrumbsListSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10EA4DED81883C5B8D8FB2C77B3B5EA /* ANZBreadcrumbsListSeparatorView.swift */; };
+		5B5129FECF8AB04020E67C589A9D650A /* ANZBreadcrumbsNavigationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ECEE2E7FDA37C5B27B50A287045521 /* ANZBreadcrumbsNavigationConfig.swift */; };
 		5E69B9ED59CEEBA7C0CBDB41B62F5CA7 /* Pods-ANZBreadcrumbsNavigationController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2681070ED38AA0B284D58A73312D8EEC /* Pods-ANZBreadcrumbsNavigationController_Tests-dummy.m */; };
+		636B81B3CC112A335A2C1D2C98953F9B /* ANZBreadcrumbsListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B8F62D46A31D9735A854692E768C85 /* ANZBreadcrumbsListItemView.swift */; };
+		64FBE7E99A677D24D1E3680920894EFE /* ANZBreadcrumbsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7E0D356B8BFEC56647BF7CAA93E956 /* ANZBreadcrumbsListView.swift */; };
+		6D9100EE315FDD4C5F9052069CDB7A44 /* ANZBreadcrumbsNavigationController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47CC7672C73AC9E32F19F1EE994D6E6A /* ANZBreadcrumbsNavigationController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A1B234AC8E1F98804815BBE3302C4E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		960D5146BB860C06B906CFBA75B99A69 /* ANZBreadcrumbsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D0B8729140B0B8840F1430BA986C04 /* ANZBreadcrumbsListView.swift */; };
 		98E4AA303D1DFDB1344672FA1EDC721C /* Pods-ANZBreadcrumbsNavigationController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B68C62438378CF174D17DD342D9EE602 /* Pods-ANZBreadcrumbsNavigationController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9CA99A54306CEFCBA35517B736918317 /* ANZBreadcrumbsListSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4DACA2AB4CFC8535F443EF26B9FFAA /* ANZBreadcrumbsListSeparatorView.swift */; };
-		B0BF65027999A55B2AA38B6E3750D5E4 /* ANZBreadcrumbsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8BEBC6CB3206AA9C84B77E38069EBA /* ANZBreadcrumbsNavigationController.swift */; };
-		BFF0DC4E407B36094F8D2AE0F546637E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		CF16DEFAF79F72085E14D1D066CFCA97 /* ANZBreadcrumbsNavigationController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B319A5DE3C6DCA5C0156A282D27094B /* ANZBreadcrumbsNavigationController-dummy.m */; };
 		D88477FE094610C8D5CAA1B0B250489B /* Pods-ANZBreadcrumbsNavigationController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A228A33403F23685590A71BB4029B2 /* Pods-ANZBreadcrumbsNavigationController_Example-dummy.m */; };
+		ED63EAA062A11E5137A7A76F78923AB7 /* NotificationName+ANZBreadscrumbs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE41A4AB13DE061FB909ACD7E6BA17A /* NotificationName+ANZBreadscrumbs.swift */; };
+		F7C1EC89EE8826A2AC1AC840CCF7112A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 		FF3F9F6E7F09521DA303180E9FA5B216 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +30,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 863998BEA8F4F92C042E2FFE8890DE37;
+			remoteGlobalIDString = B49A435B73CDEE1F6944F8C913EE04C8;
 			remoteInfo = ANZBreadcrumbsNavigationController;
 		};
 		814E711C22B32FD051A7FAA6CDBEF3E3 /* PBXContainerItemProxy */ = {
@@ -42,46 +43,47 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B3CA33B331900D96FD88E70A1E3D1E4 /* ANZBreadcrumbsNavigationController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ANZBreadcrumbsNavigationController.modulemap; sourceTree = "<group>"; };
 		0B453882B7B2C18A30F3714CBA25DA1F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		11D0B8729140B0B8840F1430BA986C04 /* ANZBreadcrumbsListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ANZBreadcrumbsListView.swift; path = ANZBreadcrumbsNavigationController/Classes/ANZBreadcrumbsListView.swift; sourceTree = "<group>"; };
 		167F874543977C8C5A25420768D44622 /* Pods-ANZBreadcrumbsNavigationController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ANZBreadcrumbsNavigationController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		201F089D89D8E3F983F8D5B0B528A29D /* ANZBreadcrumbsNavigationController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ANZBreadcrumbsNavigationController-prefix.pch"; sourceTree = "<group>"; };
+		22ECEE2E7FDA37C5B27B50A287045521 /* ANZBreadcrumbsNavigationConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ANZBreadcrumbsNavigationConfig.swift; path = ANZBreadcrumbsNavigationController/Classes/ANZBreadcrumbsNavigationConfig.swift; sourceTree = "<group>"; };
 		2681070ED38AA0B284D58A73312D8EEC /* Pods-ANZBreadcrumbsNavigationController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ANZBreadcrumbsNavigationController_Tests-dummy.m"; sourceTree = "<group>"; };
+		2AC602C86E77A2C5CE6DFCBA445E44AA /* ANZBreadcrumbsNavigationController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ANZBreadcrumbsNavigationController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		36A228A33403F23685590A71BB4029B2 /* Pods-ANZBreadcrumbsNavigationController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ANZBreadcrumbsNavigationController_Example-dummy.m"; sourceTree = "<group>"; };
+		3C888B70E99BECB17BDDCECABC17F407 /* ANZBreadcrumbsNavigationController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ANZBreadcrumbsNavigationController.xcconfig; sourceTree = "<group>"; };
 		3E04DC8E3F39A2D36821CD93759954D8 /* Pods-ANZBreadcrumbsNavigationController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ANZBreadcrumbsNavigationController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		40195F828804FD9D452A4C40CD8ED93C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		47CC7672C73AC9E32F19F1EE994D6E6A /* ANZBreadcrumbsNavigationController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ANZBreadcrumbsNavigationController-umbrella.h"; sourceTree = "<group>"; };
 		49699A52B232FF4AEDFA6640A75E1D89 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B319A5DE3C6DCA5C0156A282D27094B /* ANZBreadcrumbsNavigationController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ANZBreadcrumbsNavigationController-dummy.m"; sourceTree = "<group>"; };
 		4E37EDB7B615E1A3AA4978A75469DB7A /* ANZBreadcrumbsNavigationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ANZBreadcrumbsNavigationController.framework; path = ANZBreadcrumbsNavigationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F7E0D356B8BFEC56647BF7CAA93E956 /* ANZBreadcrumbsListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ANZBreadcrumbsListView.swift; path = ANZBreadcrumbsNavigationController/Classes/ANZBreadcrumbsListView.swift; sourceTree = "<group>"; };
 		55E976521C6B5FE68387CD85C655E93F /* Pods-ANZBreadcrumbsNavigationController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ANZBreadcrumbsNavigationController_Tests.modulemap"; sourceTree = "<group>"; };
-		57206A96A3C4FF2EFACB6BBBCD23FE32 /* ANZBreadcrumbsNavigationController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ANZBreadcrumbsNavigationController-prefix.pch"; sourceTree = "<group>"; };
-		5C8BEBC6CB3206AA9C84B77E38069EBA /* ANZBreadcrumbsNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ANZBreadcrumbsNavigationController.swift; path = ANZBreadcrumbsNavigationController/Classes/ANZBreadcrumbsNavigationController.swift; sourceTree = "<group>"; };
+		61B8F62D46A31D9735A854692E768C85 /* ANZBreadcrumbsListItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ANZBreadcrumbsListItemView.swift; path = ANZBreadcrumbsNavigationController/Classes/ANZBreadcrumbsListItemView.swift; sourceTree = "<group>"; };
 		73D7BA860A5C38ADA504D2138C63A588 /* Pods_ANZBreadcrumbsNavigationController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ANZBreadcrumbsNavigationController_Example.framework; path = "Pods-ANZBreadcrumbsNavigationController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77E7C8B6034CEE49D8D41C8FFD0851E1 /* Pods-ANZBreadcrumbsNavigationController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ANZBreadcrumbsNavigationController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		83BF95D897DF3603B2A41C05CCB1DE2F /* Pods-ANZBreadcrumbsNavigationController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ANZBreadcrumbsNavigationController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		8425D45D5182634170A35CE03279E1EB /* ANZBreadcrumbsNavigationController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ANZBreadcrumbsNavigationController-umbrella.h"; sourceTree = "<group>"; };
+		8CE41A4AB13DE061FB909ACD7E6BA17A /* NotificationName+ANZBreadscrumbs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NotificationName+ANZBreadscrumbs.swift"; path = "ANZBreadcrumbsNavigationController/Classes/NotificationName+ANZBreadscrumbs.swift"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		976978E76A40DFBBDD2E4EFA394628A8 /* ANZBreadcrumbsNavigationController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ANZBreadcrumbsNavigationController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9797F351886A177F9BD0F9338823E529 /* Pods-ANZBreadcrumbsNavigationController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ANZBreadcrumbsNavigationController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A261C004332CD3539CC5A6AC6E2DBA37 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		A78B8CB26A2F36CD93250AAF75C7FCED /* ANZBreadcrumbsNavigationConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ANZBreadcrumbsNavigationConfig.swift; path = ANZBreadcrumbsNavigationController/Classes/ANZBreadcrumbsNavigationConfig.swift; sourceTree = "<group>"; };
-		A8F3B079329BF579C9CF0D0DDC6EA0C0 /* ANZBreadcrumbsNavigationController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ANZBreadcrumbsNavigationController-dummy.m"; sourceTree = "<group>"; };
-		AD922CB30B78F8DE4A77EAC8A3BBD8FE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A10EA4DED81883C5B8D8FB2C77B3B5EA /* ANZBreadcrumbsListSeparatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ANZBreadcrumbsListSeparatorView.swift; path = ANZBreadcrumbsNavigationController/Classes/ANZBreadcrumbsListSeparatorView.swift; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B68C62438378CF174D17DD342D9EE602 /* Pods-ANZBreadcrumbsNavigationController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ANZBreadcrumbsNavigationController_Tests-umbrella.h"; sourceTree = "<group>"; };
+		BEDCED6CD54CCE11F9A3F866F097E9D4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		BFC9B217AD91EE6B1289991DB42A0E5B /* Pods-ANZBreadcrumbsNavigationController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ANZBreadcrumbsNavigationController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C405395F1EE5A240209EA466AC73095C /* Pods-ANZBreadcrumbsNavigationController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ANZBreadcrumbsNavigationController_Example-resources.sh"; sourceTree = "<group>"; };
+		C57F9F891ABF13FA694A58961ECDEAF5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C88C7D6170167C52C059C0FFBB031D07 /* Pods-ANZBreadcrumbsNavigationController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ANZBreadcrumbsNavigationController_Tests-resources.sh"; sourceTree = "<group>"; };
 		CD47FF2B0D597CC6D3A8ABB306B0B87E /* Pods-ANZBreadcrumbsNavigationController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ANZBreadcrumbsNavigationController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CEC78BC56F410A0023577831831C94CA /* Pods-ANZBreadcrumbsNavigationController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ANZBreadcrumbsNavigationController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		CF26B9B86561E8340F2DF6649A3ED027 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF69F93C11628FA5EF66446E2EC5D494 /* Pods_ANZBreadcrumbsNavigationController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ANZBreadcrumbsNavigationController_Tests.framework; path = "Pods-ANZBreadcrumbsNavigationController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02D2FBE46D24CBB31F2E28AC64E1D3E /* Pods-ANZBreadcrumbsNavigationController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ANZBreadcrumbsNavigationController_Example-umbrella.h"; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DC4DACA2AB4CFC8535F443EF26B9FFAA /* ANZBreadcrumbsListSeparatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ANZBreadcrumbsListSeparatorView.swift; path = ANZBreadcrumbsNavigationController/Classes/ANZBreadcrumbsListSeparatorView.swift; sourceTree = "<group>"; };
 		E0A9CF100EB30E5FD0F7FFE5C23043F4 /* Pods-ANZBreadcrumbsNavigationController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ANZBreadcrumbsNavigationController_Example.modulemap"; sourceTree = "<group>"; };
-		E4BC19997380881E238CDBFB38286B19 /* ANZBreadcrumbsNavigationController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ANZBreadcrumbsNavigationController.xcconfig; sourceTree = "<group>"; };
+		E0BF1FDFF1107E7252A0D320F93F5F30 /* ANZBreadcrumbsNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ANZBreadcrumbsNavigationController.swift; path = ANZBreadcrumbsNavigationController/Classes/ANZBreadcrumbsNavigationController.swift; sourceTree = "<group>"; };
 		E7784408DA27F780702E6F06B55EF9E0 /* Pods-ANZBreadcrumbsNavigationController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ANZBreadcrumbsNavigationController_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		E8CBCD07313CC3C60DF068706AD3B7CC /* Pods-ANZBreadcrumbsNavigationController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ANZBreadcrumbsNavigationController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F44E3BE2CE577C3FFB79EE96A2A3A2E3 /* ANZBreadcrumbsListItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ANZBreadcrumbsListItemView.swift; path = ANZBreadcrumbsNavigationController/Classes/ANZBreadcrumbsListItemView.swift; sourceTree = "<group>"; };
-		F52AA0DF29E3F652C50729EEFD50D13D /* ANZBreadcrumbsNavigationController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ANZBreadcrumbsNavigationController.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,15 +95,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2250726ADD2D107638F492F872382465 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1EF27DB806A7FDB1100FDA2F96916453 /* Foundation.framework in Frameworks */,
-				BFF0DC4E407B36094F8D2AE0F546637E /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		57940F4869D94DA69C886AC6DA2801F4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -110,19 +103,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		77F402AB6F034B3C740546ADF405FC56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EE575443B25A1524B5FD864BB74EF7B /* Foundation.framework in Frameworks */,
+				F7C1EC89EE8826A2AC1AC840CCF7112A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14271E514BF53587D6DCBC115F8E87A1 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				976978E76A40DFBBDD2E4EFA394628A8 /* ANZBreadcrumbsNavigationController.podspec */,
-				AD922CB30B78F8DE4A77EAC8A3BBD8FE /* LICENSE */,
-				A261C004332CD3539CC5A6AC6E2DBA37 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		3A98528609576AA49BB2780B83A4A865 /* Pods-ANZBreadcrumbsNavigationController_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,66 +191,77 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				FC536998E73C55323FCC8D8B4CAC9D9B /* Development Pods */,
+				A0DB70990351AB29A738DB0B784D76E6 /* Development Pods */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				7410814021B8F40ECF0631D609987B1A /* Products */,
 				71DF7E882A782198C445EFDA08FBD70D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7DF3643529513F46164C3E2FF80059C8 /* ANZBreadcrumbsNavigationController */ = {
+		A0DB70990351AB29A738DB0B784D76E6 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F44E3BE2CE577C3FFB79EE96A2A3A2E3 /* ANZBreadcrumbsListItemView.swift */,
-				DC4DACA2AB4CFC8535F443EF26B9FFAA /* ANZBreadcrumbsListSeparatorView.swift */,
-				11D0B8729140B0B8840F1430BA986C04 /* ANZBreadcrumbsListView.swift */,
-				A78B8CB26A2F36CD93250AAF75C7FCED /* ANZBreadcrumbsNavigationConfig.swift */,
-				5C8BEBC6CB3206AA9C84B77E38069EBA /* ANZBreadcrumbsNavigationController.swift */,
-				14271E514BF53587D6DCBC115F8E87A1 /* Pod */,
-				B9D8542936DAF2DE1B85428E96DF641C /* Support Files */,
+				FCD44A907D09E2D65E902DAA850C5873 /* ANZBreadcrumbsNavigationController */,
 			);
-			name = ANZBreadcrumbsNavigationController;
-			path = ../..;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		B9D8542936DAF2DE1B85428E96DF641C /* Support Files */ = {
+		F6FF2F2B0DA4BEEA84C1DB4066568B64 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F52AA0DF29E3F652C50729EEFD50D13D /* ANZBreadcrumbsNavigationController.modulemap */,
-				E4BC19997380881E238CDBFB38286B19 /* ANZBreadcrumbsNavigationController.xcconfig */,
-				A8F3B079329BF579C9CF0D0DDC6EA0C0 /* ANZBreadcrumbsNavigationController-dummy.m */,
-				57206A96A3C4FF2EFACB6BBBCD23FE32 /* ANZBreadcrumbsNavigationController-prefix.pch */,
-				8425D45D5182634170A35CE03279E1EB /* ANZBreadcrumbsNavigationController-umbrella.h */,
-				CF26B9B86561E8340F2DF6649A3ED027 /* Info.plist */,
+				0B3CA33B331900D96FD88E70A1E3D1E4 /* ANZBreadcrumbsNavigationController.modulemap */,
+				3C888B70E99BECB17BDDCECABC17F407 /* ANZBreadcrumbsNavigationController.xcconfig */,
+				4B319A5DE3C6DCA5C0156A282D27094B /* ANZBreadcrumbsNavigationController-dummy.m */,
+				201F089D89D8E3F983F8D5B0B528A29D /* ANZBreadcrumbsNavigationController-prefix.pch */,
+				47CC7672C73AC9E32F19F1EE994D6E6A /* ANZBreadcrumbsNavigationController-umbrella.h */,
+				C57F9F891ABF13FA694A58961ECDEAF5 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/ANZBreadcrumbsNavigationController";
 			sourceTree = "<group>";
 		};
-		FC536998E73C55323FCC8D8B4CAC9D9B /* Development Pods */ = {
+		F8BB5E4038C5C5A738BDD08E279C7FB4 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				7DF3643529513F46164C3E2FF80059C8 /* ANZBreadcrumbsNavigationController */,
+				2AC602C86E77A2C5CE6DFCBA445E44AA /* ANZBreadcrumbsNavigationController.podspec */,
+				BEDCED6CD54CCE11F9A3F866F097E9D4 /* LICENSE */,
+				40195F828804FD9D452A4C40CD8ED93C /* README.md */,
 			);
-			name = "Development Pods";
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		FCD44A907D09E2D65E902DAA850C5873 /* ANZBreadcrumbsNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				61B8F62D46A31D9735A854692E768C85 /* ANZBreadcrumbsListItemView.swift */,
+				A10EA4DED81883C5B8D8FB2C77B3B5EA /* ANZBreadcrumbsListSeparatorView.swift */,
+				4F7E0D356B8BFEC56647BF7CAA93E956 /* ANZBreadcrumbsListView.swift */,
+				22ECEE2E7FDA37C5B27B50A287045521 /* ANZBreadcrumbsNavigationConfig.swift */,
+				E0BF1FDFF1107E7252A0D320F93F5F30 /* ANZBreadcrumbsNavigationController.swift */,
+				8CE41A4AB13DE061FB909ACD7E6BA17A /* NotificationName+ANZBreadscrumbs.swift */,
+				F8BB5E4038C5C5A738BDD08E279C7FB4 /* Pod */,
+				F6FF2F2B0DA4BEEA84C1DB4066568B64 /* Support Files */,
+			);
+			name = ANZBreadcrumbsNavigationController;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8651694C84D94D13AC30ADC01909D1F1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2A91F6552D713C3D72F54B3851B197CA /* ANZBreadcrumbsNavigationController-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		90BE90361CB28AF9EA214F7C13132A4E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				100C43E10E5F7D2F00A3EA066F4ED0D8 /* Pods-ANZBreadcrumbsNavigationController_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98F32D5FB2B1E462D4AAE44E8ACD0730 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D9100EE315FDD4C5F9052069CDB7A44 /* ANZBreadcrumbsNavigationController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,13 +294,13 @@
 			productReference = CF69F93C11628FA5EF66446E2EC5D494 /* Pods_ANZBreadcrumbsNavigationController_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		863998BEA8F4F92C042E2FFE8890DE37 /* ANZBreadcrumbsNavigationController */ = {
+		B49A435B73CDEE1F6944F8C913EE04C8 /* ANZBreadcrumbsNavigationController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D875DB4213491AF5D8EFE3DB1C2B83CD /* Build configuration list for PBXNativeTarget "ANZBreadcrumbsNavigationController" */;
+			buildConfigurationList = 283D49CBAE5633CBB2B3120F9C6EBAA7 /* Build configuration list for PBXNativeTarget "ANZBreadcrumbsNavigationController" */;
 			buildPhases = (
-				E7BC772FB75B6E4167DA6E34DE5A9EFC /* Sources */,
-				2250726ADD2D107638F492F872382465 /* Frameworks */,
-				8651694C84D94D13AC30ADC01909D1F1 /* Headers */,
+				9C363E96FCDA4443914441C9B6339166 /* Sources */,
+				77F402AB6F034B3C740546ADF405FC56 /* Frameworks */,
+				98F32D5FB2B1E462D4AAE44E8ACD0730 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -347,7 +350,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				863998BEA8F4F92C042E2FFE8890DE37 /* ANZBreadcrumbsNavigationController */,
+				B49A435B73CDEE1F6944F8C913EE04C8 /* ANZBreadcrumbsNavigationController */,
 				EEDA4243A85760891C5BE3E07CC2FE73 /* Pods-ANZBreadcrumbsNavigationController_Example */,
 				7ED34A7CE5ECD706C26033EDCF951CBB /* Pods-ANZBreadcrumbsNavigationController_Tests */,
 			);
@@ -371,16 +374,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7BC772FB75B6E4167DA6E34DE5A9EFC /* Sources */ = {
+		9C363E96FCDA4443914441C9B6339166 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FD4C80DA436C8300E25690E9258488D /* ANZBreadcrumbsListItemView.swift in Sources */,
-				9CA99A54306CEFCBA35517B736918317 /* ANZBreadcrumbsListSeparatorView.swift in Sources */,
-				960D5146BB860C06B906CFBA75B99A69 /* ANZBreadcrumbsListView.swift in Sources */,
-				26D3B977036D91953492987742E45DB7 /* ANZBreadcrumbsNavigationConfig.swift in Sources */,
-				5DEA59AB7C98137E7E24C02D798D5EC6 /* ANZBreadcrumbsNavigationController-dummy.m in Sources */,
-				B0BF65027999A55B2AA38B6E3750D5E4 /* ANZBreadcrumbsNavigationController.swift in Sources */,
+				636B81B3CC112A335A2C1D2C98953F9B /* ANZBreadcrumbsListItemView.swift in Sources */,
+				3333CCFF09A6C46EE8E3AA3BD1E09A47 /* ANZBreadcrumbsListSeparatorView.swift in Sources */,
+				64FBE7E99A677D24D1E3680920894EFE /* ANZBreadcrumbsListView.swift in Sources */,
+				5B5129FECF8AB04020E67C589A9D650A /* ANZBreadcrumbsNavigationConfig.swift in Sources */,
+				CF16DEFAF79F72085E14D1D066CFCA97 /* ANZBreadcrumbsNavigationController-dummy.m in Sources */,
+				28AAA09850E2C62AB333F33988F720B5 /* ANZBreadcrumbsNavigationController.swift in Sources */,
+				ED63EAA062A11E5137A7A76F78923AB7 /* NotificationName+ANZBreadscrumbs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,45 +400,12 @@
 		F56CB41BC19F743BDC797A8703E05AE6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ANZBreadcrumbsNavigationController;
-			target = 863998BEA8F4F92C042E2FFE8890DE37 /* ANZBreadcrumbsNavigationController */;
+			target = B49A435B73CDEE1F6944F8C913EE04C8 /* ANZBreadcrumbsNavigationController */;
 			targetProxy = 2ECFC1A8850CC16BE5BF15752BF1EAE9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0579DE14CD097EDCD27C1A3DE509CC8E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4BC19997380881E238CDBFB38286B19 /* ANZBreadcrumbsNavigationController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ANZBreadcrumbsNavigationController/ANZBreadcrumbsNavigationController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ANZBreadcrumbsNavigationController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ANZBreadcrumbsNavigationController/ANZBreadcrumbsNavigationController.modulemap";
-				PRODUCT_MODULE_NAME = ANZBreadcrumbsNavigationController;
-				PRODUCT_NAME = ANZBreadcrumbsNavigationController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		16E8211B02B0319CC733792B379B5882 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CD47FF2B0D597CC6D3A8ABB306B0B87E /* Pods-ANZBreadcrumbsNavigationController_Tests.debug.xcconfig */;
@@ -531,9 +502,9 @@
 			};
 			name = Debug;
 		};
-		4442B778C31AD6F87FAA711CE2C9878B /* Debug */ = {
+		359CCC1E7D679CBA1BC4A101352789D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4BC19997380881E238CDBFB38286B19 /* ANZBreadcrumbsNavigationController.xcconfig */;
+			baseConfigurationReference = 3C888B70E99BECB17BDDCECABC17F407 /* ANZBreadcrumbsNavigationController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -625,6 +596,39 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C0C73C3653FC5176A14B64171495EC4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C888B70E99BECB17BDDCECABC17F407 /* ANZBreadcrumbsNavigationController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ANZBreadcrumbsNavigationController/ANZBreadcrumbsNavigationController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ANZBreadcrumbsNavigationController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ANZBreadcrumbsNavigationController/ANZBreadcrumbsNavigationController.modulemap";
+				PRODUCT_MODULE_NAME = ANZBreadcrumbsNavigationController;
+				PRODUCT_NAME = ANZBreadcrumbsNavigationController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -728,6 +732,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		283D49CBAE5633CBB2B3120F9C6EBAA7 /* Build configuration list for PBXNativeTarget "ANZBreadcrumbsNavigationController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				359CCC1E7D679CBA1BC4A101352789D8 /* Debug */,
+				C0C73C3653FC5176A14B64171495EC4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -742,15 +755,6 @@
 			buildConfigurations = (
 				E68937E249A54CD3C787CF9A8A20C4A8 /* Debug */,
 				93329F10123688B8365238487F3B6262 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D875DB4213491AF5D8EFE3DB1C2B83CD /* Build configuration list for PBXNativeTarget "ANZBreadcrumbsNavigationController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4442B778C31AD6F87FAA711CE2C9878B /* Debug */,
-				0579DE14CD097EDCD27C1A3DE509CC8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
