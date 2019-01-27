@@ -17,6 +17,7 @@ import Foundation
     @objc public dynamic var maxWidth: CGFloat = 320.0
     @objc public dynamic var showsHorizontalScrollIndicator: Bool = false
     @objc public dynamic var isRootDisplayed: Bool = false
+    @objc public dynamic var isAutoHidden: Bool = false
     @objc public dynamic var itemStyle: ItemStyle = ItemStyle()
     
     @objc public class ItemStyle: NSObject {
