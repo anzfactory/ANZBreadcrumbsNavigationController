@@ -36,9 +36,19 @@ public class ANZBreadcrumbsNavigationController: UINavigationController {
     private var listView: ANZBreadcrumbsListView?
     private var containerView: UIView?
     private var containerViewHeightConstraint: NSLayoutConstraint?
+    private var keyObservations: [NSKeyValueObservation] = []
     
     private var inTransition: Bool = false
     private var inAnimation: Bool = false
+    
+    deinit {
+        
+        for observation in self.keyObservations {
+            observation.invalidate()
+        }
+        
+        self.keyObservations = []
+    }
     
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,7 +74,10 @@ public class ANZBreadcrumbsNavigationController: UINavigationController {
             return
         }
         
-        viewController.addObserver(self, forKeyPath: #keyPath(UIViewController.title), options: [.new], context: nil)
+        let observation = viewController.observe(\.title, options: [.new]) { [weak self] (vc, change) in
+            self?.update(event: .update)
+        }
+        self.keyObservations.append(observation)
         
         self.update(event: .insert)
     }
@@ -103,22 +116,13 @@ public class ANZBreadcrumbsNavigationController: UINavigationController {
             self.inTransition = false
         }
         
-        for vc in vcList {
-            vc.removeObserver(self, forKeyPath: #keyPath(UIViewController.title))
+        for _ in vcList {
+            self.keyObservations.popLast()?.invalidate()
         }
         
         self.update(event: .delete)
         
         return vcList
-    }
-    
-    public override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        
-        guard object is UIViewController else {
-            return
-        }
-        
-        self.update(event: .update)
     }
 }
 
@@ -397,7 +401,9 @@ extension ANZBreadcrumbsNavigationController: UINavigationControllerDelegate {
         
         func finTransition(context: UIViewControllerTransitionCoordinatorContext) {
             
-            context.viewController(forKey: UITransitionContextViewControllerKey.from)?.removeObserver(self, forKeyPath: #keyPath(UIViewController.title))
+            if let observation = self.keyObservations.popLast() {
+                observation.invalidate()
+            }
             self.update(event: .delete)
         }
         
