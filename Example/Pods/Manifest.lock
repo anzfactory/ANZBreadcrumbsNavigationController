@@ -1,5 +1,5 @@
 PODS:
-  - ANZBreadcrumbsNavigationController (0.6.0)
+  - ANZBreadcrumbsNavigationController (0.6.1)
 
 DEPENDENCIES:
   - ANZBreadcrumbsNavigationController (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ANZBreadcrumbsNavigationController: 77439ecda85fd34e67aa763c8fb9dfdcc4cf7787
+  ANZBreadcrumbsNavigationController: c92aed4ce2e7317aedbf5efcbdd064c532fbd09d
 
 PODFILE CHECKSUM: 14d21dd73be5a678d45c01fbc2c2f183e4908221
 
