@@ -21,6 +21,9 @@ class TableViewController: UITableViewController {
             if root == self {
                 let barButton = UIBarButtonItem(title: "Close", style: .plain, target: self, action: #selector(type(of: self).back))
                 navigationItem.leftBarButtonItems = [barButton]
+            } else {
+                let barButton = UIBarButtonItem(title: "Close", style: .plain, target: self, action: #selector(type(of: self).back))
+                navigationItem.rightBarButtonItems = [barButton]
             }
         }
     }

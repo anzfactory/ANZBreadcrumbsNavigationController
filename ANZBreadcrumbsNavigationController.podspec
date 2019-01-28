@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ANZBreadcrumbsNavigationController'
-  s.version          = '0.6.0'
+  s.version          = '0.6.1'
   s.summary          = 'Breadcrumbs navigation controller.'
   s.description      = <<-DESC
 ANZBreadcrumbsNavigationController is breadcrums navigation
